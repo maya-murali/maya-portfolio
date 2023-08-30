@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compactible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <!--Font awsome cdn fond icon css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-m"></i>
+                        <div class="logo-text">Maya Murali</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="profile-pic">
+                        <img src="profile-pic.png" alt="profile pic">
+                        </div>
+                        <div class="profile-text">
+                            <h5>Hi! I'm <span class="input">Web Developer</span></h5>
+                        <h1>Maya Murali</h1>
+                        <p>Looking for a solid opportunity, to be part of a team, to be a part of something much larger than myself and not to mention, to bring excitement to my career.</p>
+                        
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download CV</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--Typed js for typing text effect-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+        <script>
+            /*Creating button click show hide navbar*/
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelectorAll(".navlinks li");
+
+            togglebtn.addEventListener("click",function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+
+            var typed=new Typed(".input",{
+                strings:["Software Engineer","Software Engineer","Web Developer","Business Consultant"],
+                typedSpeed:90,
+                backSpeed:75,
+                loop:true
+            
+            });
+        </script>
+    </body>
+</html>
